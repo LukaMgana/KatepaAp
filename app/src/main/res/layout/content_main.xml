@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    >
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Enjoy our services !"
+        android:gravity="center"
+        android:textColor="#FFE91E63"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="403dp"
+        android:layout_height="148dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_below="@+id/title_view"
+        android:layout_gravity="fill"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="8dp"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="92dp"
+                android:src="@drawable/Bus1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Kama Ulaya and get your favourites !"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textSize="21dp"
+                android:textColor="#FFE91E63"
+                >
+        </LinearLayout>
+        >
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card1"
+        android:rowCount="3"
+        android:columnCount="2"
+
+        >
+
+
+        <!-- Shows layout of each column-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus services"
+                    android:textColor="#FF2285FF"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus2"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book now"
+                    android:textColor="#FFE91E63"
+                    android:textStyle="italic"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+            </LinearLayout>>
+`
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- End of Shows layout of each column-->
+
+
+        <!-- Shows layout of each column-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel services"
+                    android:textColor="#FF2285FF"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus2"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose it now"
+                    android:textColor="#FFE91E63"
+                    android:textStyle="italic"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+            </LinearLayout>>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- End of Shows layout of each column-->
+
+        <!-- Shows layout of each column-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Deliveries"
+                    android:textColor="#FF2285FF"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check it now"
+                    android:textColor="#FFE91E63"
+                    android:textStyle="italic"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+            </LinearLayout>>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- End of Shows layout of each column-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goods Deliveries"
+                    android:textColor="#FF2285FF"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/plus2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check it now"
+                    android:textColor="#FFE91E63"
+                    android:textStyle="italic"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    >
+
+            </LinearLayout>
+            >
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</RelativeLayout>
